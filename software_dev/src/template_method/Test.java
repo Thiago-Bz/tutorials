@@ -15,8 +15,8 @@ public class Test {
         budget.addItem(new Item("MONITOR", 200));
         budget.addItem(new Item("SPEAKER", 100));
 
-        DiscountMoreThan3Items d1 = new DiscountMoreThan3Items();
-        DiscountValueMoreThan700 d2 = new DiscountValueMoreThan700();
+        DiscountTemplate d1 = new DiscountMoreThan3Items();
+        DiscountTemplate d2 = new DiscountValueMoreThan700();
 
         System.out.println(d1.calculateDiscount(budget));
         System.out.println(d2.calculateDiscount(budget));
