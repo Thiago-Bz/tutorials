@@ -1,5 +1,7 @@
 package strategy;
 
+import model.Budget;
+
 /**
  * Created by bruno on 3/20/17.
  */
@@ -10,6 +12,7 @@ public class Test {
         ITax simpleTax = new SimpleTax();
         ITax complexTax = new ComplexTax();
 
-        System.out.println(complexTax.calculate(budget));
+        System.out.println("Simple tax: " + simpleTax.calculate(budget));
+        System.out.println("Complex tax: " + complexTax.calculate(budget));
     }
 }

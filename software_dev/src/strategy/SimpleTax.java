@@ -1,5 +1,7 @@
 package strategy;
 
+import model.Budget;
+
 /**
  * Created by bruno on 3/20/17.
  */
