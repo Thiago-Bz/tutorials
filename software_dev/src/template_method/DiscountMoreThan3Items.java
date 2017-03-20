@@ -6,18 +6,10 @@ import model.Budget;
  * Created by bruno on 3/20/17.
  */
 
-public class DiscountMoreThan3Items implements IDiscountTemplate {
+public class DiscountMoreThan3Items extends DiscountTemplate {
     @Override
     public boolean maxDiscountApplicable(Budget budget) {
         return budget.getItems().size() > 3;
-    }
-
-    @Override
-    public double calculateDiscount(Budget budget) {
-        if (maxDiscountApplicable(budget))
-            return getMaxDiscount(budget);
-        else
-            return getMinDiscount(budget);
     }
 
     @Override
