@@ -3,12 +3,13 @@ package collections;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 import model.Person;
 
 public class TestCompare {
 	public static void main(String[] args) {
-		ArrayList<Person> list = new ArrayList<>();
+		List<Person> list = new ArrayList<>();
 
 		list.add(new Person("Jose", 28));
 		list.add(new Person("Carlos", 20));
