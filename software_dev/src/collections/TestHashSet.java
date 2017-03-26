@@ -14,5 +14,9 @@ public class TestHashSet {
 		
 		System.out.println(cities);
 		System.out.println(cities.contains("São Paulo"));
+		
+		cities.forEach(c -> {
+			System.out.println(c);
+		});
 	}
 }
